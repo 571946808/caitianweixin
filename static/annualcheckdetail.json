@@ -1,0 +1,32 @@
+{
+  "code": "0",
+  "title": "2017-2018数学组年度考核",
+  "position": "班主任",
+  "date": "2017-01-01 00:00:00",
+  "endDate": "2018-01-01 00:00:00",
+  "list": [
+    {
+      "selectTitle": "优秀与先进评选",
+      "selectContent": "单选，两项各选出1位老师：",
+      "list": [
+        {"tableHead": "姓", "type": "1", "tableBody": ["张", "李"]},
+        {"tableHead": "名", "type": "1", "tableBody": ["三", "四"]},
+        {"tableHead": "优秀", "type": "2", "id": "1", "tableBody": ["111", "222"]},
+        {"tableHead": "先进", "type": "3", "id": "2", "count": "1", "tableBody": ["1", "2"]},
+        {"tableHead": "打分", "type": "4", "id": "3", "tableBody": 2}
+      ]
+    },
+    {
+      "selectTitle": "优秀与先进评选",
+      "selectContent": "单选，两项各选出1位老师：",
+      "list": [
+        {"tableHead": "姓", "type": "1", "tableBody": ["张", "李"]},
+        {"tableHead": "名", "type": "1", "tableBody": ["三", "四"]},
+        {"tableHead": "优秀", "type": "2", "id": "4", "tableBody": ["111", "222"]},
+        {"tableHead": "优秀", "type": "3", "id": "5", "count": "1", "tableBody": ["111", "222"]},
+        {"tableHead": "文本", "type": "5", "id": "6", "tableBody": 2},
+        {"tableHead": "打分", "type": "5", "id": "7", "tableBody": 2}
+      ]
+    }
+  ]
+}
