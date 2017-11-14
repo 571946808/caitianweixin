@@ -28,7 +28,7 @@
           })
             .then(function (response) {
               response = response.data
-              if (response.code === '0') {
+              if (String(response.code) === '0') {
                 let type = that.$route.params.type
                 if (type === '1') {
                   window.location = '#/AnnualCheck'

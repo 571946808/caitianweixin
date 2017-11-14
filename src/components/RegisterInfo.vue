@@ -74,7 +74,7 @@
         axios.get('/static/registerinfo.json')
           .then((response) => {
             response = response.data
-            if (response.code === '0') {
+            if (String(response.code) === '0') {
               this.title = response.title
               this.position = response.position
               this.date = response.date
@@ -133,7 +133,7 @@
           axios.post('/static/common.json', form, config)
             .then((response) => {
               response = response.data
-              if (response.code === '0') {
+              if (String(response.code) === '0') {
                 that.$dialog.toast({mes: '提交成功！', timeout: 2000})
               } else {
                 that.$dialog.toast({mes: '提交失败！', timeout: 2000})

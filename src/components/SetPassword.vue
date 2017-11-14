@@ -45,7 +45,7 @@
         })
           .then((response) => {
             response = response.data
-            if (response.code === '0') {
+            if (String(response.code) === '0') {
               setTimeout(() => {
                 that.code = true
                 that.$dialog.loading.close()
@@ -82,7 +82,7 @@
           })
             .then((response) => {
               response = response.data
-              if (response.code === '0') {
+              if (String(response.code) === '0') {
                 that.$dialog.toast({mes: '提交成功！', timeout: 2000})
                 window.location = '#/Login/' + that.$route.params.type
               } else {

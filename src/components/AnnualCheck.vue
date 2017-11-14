@@ -30,7 +30,7 @@
         axios.get('/static/annualcheck.json')
           .then((response) => {
             response = response.data
-            if (response.code === '0') {
+            if (String(response.code) === '0') {
               this.position = response.position
               this.list = response.list
             } else {

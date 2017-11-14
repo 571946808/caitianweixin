@@ -4,7 +4,7 @@
     <yd-cell-group>
       <yd-cell-item>
         <span slot="left">学号/工号：</span>
-        <yd-input slot="right" v-model="number" required :show-required-icon="false" max="5" placeholder="请输入您的学号" ></yd-input>
+        <yd-input slot="right" v-model="number" required :show-required-icon="false" type="number" placeholder="请输入您的学号" ></yd-input>
       </yd-cell-item>
       <yd-cell-item>
         <span slot="left">姓名：</span>
@@ -36,7 +36,7 @@
           })
             .then((response) => {
               response = response.data
-              if (response.code === '0') {
+              if (String(response.code) === '0') {
                 let type = that.$route.params.type
                 let status = that.$route.params.status
                 if (status !== '0') {

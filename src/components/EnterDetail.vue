@@ -71,7 +71,7 @@
         })
           .then((response) => {
             response = response.data
-            if (response.code === '0') {
+            if (String(response.code) === '0') {
               this.title = response.title
               this.position = response.position
               this.date = response.date
@@ -111,7 +111,7 @@
           })
             .then((response) => {
               response = response.data
-              if (response.code === '0') {
+              if (String(response.code) === '0') {
                 window.location = '#/Enter'
                 that.$dialog.toast({mes: '提交成功！', timeout: 2000})
               } else {
